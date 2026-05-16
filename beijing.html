@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beijing Travel Guide - Travel China</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Travel China</a>
+      <button class="menu-toggle" aria-label="Open navigation">Menu</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#comments">Comments</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-hero" style="background-image: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8)), url('https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?auto=format&fit=crop&w=1400&q=80'); background-size: cover; background-position: center;">
+      <div class="container hero-copy">
+        <span class="eyebrow">Beijing</span>
+        <h1>The heart of China’s history and culture.</h1>
+        <p>Explore iconic landmarks, imperial palaces, and modern city life in the capital city.</p>
+      </div>
+    </section>
+
+    <section class="container section" id="overview">
+      <div class="section-header">
+        <span class="section-label">City Overview</span>
+        <h2>Highlights of Beijing</h2>
+      </div>
+      <p>Beijing blends 3,000 years of history with contemporary experiences. Visit the Great Wall, the Forbidden City, and serene hutongs, then enjoy world-class museums and culinary neighborhoods.</p>
+      <div class="video-wrapper" style="margin-top:2rem;">
+        <iframe src="https://www.youtube.com/embed/sUWyq6DOUu4" title="Beijing travel video" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="container section" id="gallery">
+      <div class="section-header">
+        <h2>Photo Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Forbidden City Beijing">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Great Wall in Beijing">
+        <img src="https://images.unsplash.com/photo-1526481280690-00177ff3b8de?auto=format&fit=crop&w=900&q=80" alt="Temple of Heaven Beijing">
+      </div>
+    </section>
+
+    <section class="container section" id="comments">
+      <div class="section-header">
+        <span class="section-label">Community</span>
+        <h2>Share your Beijing travel thoughts</h2>
+      </div>
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = 'beijing-travel-page';
+        };
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://YOUR_DISQUS_SHORTNAME.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><a href="index.html">Back to Travel China homepage</a></p>
+      <p>Beijing • Travel China</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

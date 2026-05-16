@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guilin Travel Guide - Travel China</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Travel China</a>
+      <button class="menu-toggle" aria-label="Open navigation">Menu</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#comments">Comments</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-hero" style="background-image: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8)), url('https://images.unsplash.com/photo-1526481280690-00177ff3b8de?auto=format&fit=crop&w=1400&q=80'); background-size: cover; background-position: center;">
+      <div class="container hero-copy">
+        <span class="eyebrow">Guilin</span>
+        <h1>Serene karst landscapes and river valley beauty.</h1>
+        <p>Float along Li River scenery and explore Guilin's postcard-perfect countryside.</p>
+      </div>
+    </section>
+
+    <section class="container section" id="overview">
+      <div class="section-header">
+        <span class="section-label">City Overview</span>
+        <h2>Highlights of Guilin</h2>
+      </div>
+      <p>Guilin's signature limestone peaks, mirrored waterways, and rice terraces offer some of China's most iconic natural scenery. The region is perfect for tranquil boat rides, photography, and cultural villages.</p>
+      <div class="video-wrapper" style="margin-top:2rem;">
+        <iframe src="https://www.youtube.com/embed/Z0JChvR1Jyc" title="Guilin travel video" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="container section" id="gallery">
+      <div class="section-header">
+        <h2>Photo Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1459448373187-85654ec25b74?auto=format&fit=crop&w=900&q=80" alt="Li River Guilin">
+        <img src="https://images.unsplash.com/photo-1516515429577-679935d18084?auto=format&fit=crop&w=900&q=80" alt="Guilin karst hills">
+        <img src="https://images.unsplash.com/photo-1518329081020-86b729af9f24?auto=format&fit=crop&w=900&q=80" alt="Guilin countryside">
+      </div>
+    </section>
+
+    <section class="container section" id="comments">
+      <div class="section-header">
+        <span class="section-label">Community</span>
+        <h2>Share your Guilin travel impressions</h2>
+      </div>
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = 'guilin-travel-page';
+        };
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://YOUR_DISQUS_SHORTNAME.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><a href="index.html">Back to Travel China homepage</a></p>
+      <p>Guilin • Travel China</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

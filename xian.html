@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xi'an Travel Guide - Travel China</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Travel China</a>
+      <button class="menu-toggle" aria-label="Open navigation">Menu</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#comments">Comments</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-hero" style="background-image: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8)), url('https://images.unsplash.com/photo-1531268268178-4afc6ab67b45?auto=format&fit=crop&w=1400&q=80'); background-size: cover; background-position: center;">
+      <div class="container hero-copy">
+        <span class="eyebrow">Xi'an</span>
+        <h1>Step into China's ancient heart.</h1>
+        <p>Discover Xi'an's terracotta warriors, ancient walls, and rich historical heritage.</p>
+      </div>
+    </section>
+
+    <section class="container section" id="overview">
+      <div class="section-header">
+        <span class="section-label">City Overview</span>
+        <h2>Highlights of Xi'an</h2>
+      </div>
+      <p>Xi'an is one of China's oldest capitals and home to the world-famous Terracotta Army. The city preserves rich archaeological finds alongside vibrant market streets and iconic city walls.</p>
+      <div class="video-wrapper" style="margin-top:2rem;">
+        <iframe src="https://www.youtube.com/embed/QepcrjDBG2A" title="Xi'an travel video" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="container section" id="gallery">
+      <div class="section-header">
+        <h2>Photo Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1531268268178-4afc6ab67b45?auto=format&fit=crop&w=900&q=80" alt="Xi'an city wall">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Terracotta Army Xi'an">
+        <img src="https://images.unsplash.com/photo-1526481280690-00177ff3b8de?auto=format&fit=crop&w=900&q=80" alt="Xi'an Muslim Quarter">
+      </div>
+    </section>
+
+    <section class="container section" id="comments">
+      <div class="section-header">
+        <span class="section-label">Community</span>
+        <h2>Share your Xi'an travel memories</h2>
+      </div>
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = 'xian-travel-page';
+        };
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://YOUR_DISQUS_SHORTNAME.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><a href="index.html">Back to Travel China homepage</a></p>
+      <p>Xi'an • Travel China</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

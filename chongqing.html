@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chongqing Travel Guide - Travel China</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Travel China</a>
+      <button class="menu-toggle" aria-label="Open navigation">Menu</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#comments">Comments</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-hero" style="background-image: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8)), url('https://images.unsplash.com/photo-1552987768-3f3d5e6ee173?auto=format&fit=crop&w=1400&q=80'); background-size: cover; background-position: center;">
+      <div class="container hero-copy">
+        <span class="eyebrow">Chongqing</span>
+        <h1>Rivers, mountains, and unforgettable local flavor.</h1>
+        <p>Discover Chongqing's dramatic cityscape, spicy cuisine, and riverfront charm.</p>
+      </div>
+    </section>
+
+    <section class="container section" id="overview">
+      <div class="section-header">
+        <span class="section-label">City Overview</span>
+        <h2>Highlights of Chongqing</h2>
+      </div>
+      <p>Chongqing stands where rivers meet. Explore steep streets, historic neighborhoods, and lively food markets after sunset as the city lights reflect on the Yangtze.</p>
+      <div class="video-wrapper" style="margin-top:2rem;">
+        <iframe src="https://www.youtube.com/embed/Q70zwv0Hb7w" title="Chongqing travel video" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="container section" id="gallery">
+      <div class="section-header">
+        <h2>Photo Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1498887682897-f176a090e2c4?auto=format&fit=crop&w=900&q=80" alt="Chongqing riverside">
+        <img src="https://images.unsplash.com/photo-1519974719765-e6559eac2575?auto=format&fit=crop&w=900&q=80" alt="Chongqing night lights">
+        <img src="https://images.unsplash.com/photo-1532453288670-f7523f9bf38d?auto=format&fit=crop&w=900&q=80" alt="Chongqing hillside town">
+      </div>
+    </section>
+
+    <section class="container section" id="comments">
+      <div class="section-header">
+        <span class="section-label">Community</span>
+        <h2>Share your Chongqing travel memories</h2>
+      </div>
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = 'chongqing-travel-page';
+        };
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://YOUR_DISQUS_SHORTNAME.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><a href="index.html">Back to Travel China homepage</a></p>
+      <p>Chongqing • Travel China</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanghai Travel Guide - Travel China</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Travel China</a>
+      <button class="menu-toggle" aria-label="Open navigation">Menu</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#comments">Comments</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-hero" style="background-image: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8)), url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80'); background-size: cover; background-position: center;">
+      <div class="container hero-copy">
+        <span class="eyebrow">Shanghai</span>
+        <h1>Modern energy meets old Shanghai charm.</h1>
+        <p>Visit the Bund, skyline views, and cultural streets that make Shanghai a dynamic global city.</p>
+      </div>
+    </section>
+
+    <section class="container section" id="overview">
+      <div class="section-header">
+        <span class="section-label">City Overview</span>
+        <h2>Highlights of Shanghai</h2>
+      </div>
+      <p>Shanghai presents a dramatic skyline and a deep cultural legacy. Enjoy sunsets on the Huangpu River, art-filled lane ways, and vibrant dining scenes that span traditional and contemporary cuisine.</p>
+      <div class="video-wrapper" style="margin-top:2rem;">
+        <iframe src="https://www.youtube.com/embed/s8c3gK4iUac" title="Shanghai travel video" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="container section" id="gallery">
+      <div class="section-header">
+        <h2>Photo Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Shanghai Bund">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="Shanghai skyline at night">
+        <img src="https://images.unsplash.com/photo-1470163395405-d2b6b8fd2125?auto=format&fit=crop&w=900&q=80" alt="Shanghai traditional alley">
+      </div>
+    </section>
+
+    <section class="container section" id="comments">
+      <div class="section-header">
+        <span class="section-label">Community</span>
+        <h2>Share your Shanghai recommendations</h2>
+      </div>
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = 'shanghai-travel-page';
+        };
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://YOUR_DISQUS_SHORTNAME.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><a href="index.html">Back to Travel China homepage</a></p>
+      <p>Shanghai • Travel China</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
